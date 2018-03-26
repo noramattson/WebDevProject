@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Nora Mattson">
+    <meta name="keywords" content="lab, Carnegie Mellon, IS Milieux">
+    <meta name="description" content="A website about me, Nora Mattson.">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type = "text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+
+    <script src="http://code.highcharts.com/highcharts.js"></script>
+    <script src="http://code.highcharts.com/modules/exporting.js"></script>
+
+    <script type="text/javascript">
+    $(function() {
+        $('#container-graph').highcharts({
+
+            title: {
+                text: 'Weekly Workload by Month',
+            },
+
+            xAxis: {
+                title: {
+                    text: 'Months'
+                },
+                categories:['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sept','Oct','Nov','Dec']
+            },
+
+            yAxis: {
+                title: {
+                    text: 'Average hours worked each week'
+                },
+            },
+
+            tooltip:{
+                valueSuffix:' hours per week (on average)'
+            },
+
+            legend: {
+                layout: 'vertical',
+                align: 'right',
+                verticalAlign: 'middle',
+            },
+
+            series: [{
+                name: '2017',
+                data: [7.0, 6.9, 9.5, 14.5, 18.2, 21.5, 23.3, 18.3, 13.9, 9.6,4.5,2.3]
+            }, {
+                name: '2016',
+                data: [0.2,0.8,5.7,11.3,17.0,22.0,24.8,24.1,20.1,14.1,8.6,2.5]
+            }, {
+                name: '2015',
+                data: [0.9,0.6,3.5,8.4,13.5,17.0,18.9,17.9,14.3,9.0,3.9,1.0]
+            }, {
+                name: '2014',
+                data: [3.9,4.2,5.7,8.5,11.9,15.2,17.0,16.6,14.2,10.3,6.6,4.8]
+            }]
+
+        });
+    });
+    </script>
+
+
+</head>
+
+<body>
+    <div id="container">
+    <div id="top_row">
+        <header>
+            <h1>Nora Mattson</h1>
+            <h2>CMU Information Systems Student</h2>
+        </header>
+
+        <nav>
+            <a href= "index.html">About</a>
+            <a href= "projects.html">Projects</a>
+            <a href= "contact.html" class="selected">Contact</a>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h3>Contact</h3>
+
+        <p> Please use the below map to find me</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3751.241943531783!2d-79.94589451174582!3d40.44397957971615!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8834f21f58679a9f%3A0x88716b461fc4daf4!2sCarnegie+Mellon+University!5e0!3m2!1sen!2sus!4v1521090553469" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+
+        <div id="container-graph"></div>
+
+        <form onsubmit="return validate()">
+
+        <fieldset>
+            <legend>Tell me about you!</legend>
+            <label>Name:</label><br/>
+            <input type="text" name="name" value="Your Name" size="20" maxlength="250"><br/>
+            <label>Your date of birth</label><br/>
+            <input type="date" name="birthday" id = "birthday" required><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>What do you like?</legend>
+            <label>Your favorite flower color</label><br/>
+            <input type="color" name="flowercolor"><br/>
+            <label>Message</label><br/>
+            <textarea name="message" rows="10" cols="50" maxlength="250"></textarea><br/>
+        </fieldset>
+
+        <fieldset>
+            <legend>How should I contact you?</legend>
+            <label>How did you find out about me?</label><br/>
+            <select name="method">
+                <option value="Google" selected>Google</option>
+                <option value="News article">News article</option>
+                <option value="Friend">Friend</option>
+                <option value="Other">Other</option>
+            </select></br>
+            <label>Please indicate if you want updates via email</label><br/>
+            <input type="checkbox" name="updates" value="wants updates">Yes, please update me!</input><br/>
+            <label>Please provide your email address.</label><br/>
+            <input type="email" name="email" value="abc@defg.com" required></br>
+            <label>What is your phone number? Enter without any dashes or spaces.</label></br>
+            <input type="text" id="phone"></input></br>
+            <label>Choose a password.</label></br>
+            <input type="password" name="password" maxlength="20"></br>
+            <input type="image" src="images/submit.png" value="Submit">
+        </fieldset>
+
+        </form>
+    </div>
+
+    <div id="sidebar">
+        <h3>Find Me</h3>
+        Nora Mattson<br/>
+        <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br/>
+        5000 Forbes Avenue<br/>
+        Pittsburgh, PA 15213<br/>
+        347-835-7159(c)<br/>
+        <a href="mailto:nmattson@andrew.cmu.edu"><img src="images/email.png"></a>
+        <a href="https://www.linkedin.com/in/nora-m-9305b7125/"><img src="images/linkedIn.png"></a>
+        <a href="https://www.facebook.com/nora.mattson.908"><img src="images/facebook.png"></a>
+    </div>
+
+    <footer>
+        <hr/>
+        &copy; Nora Mattson 2017<br/>
+        <a href="mailto:nmattson@andrew.cmu.edu">Email Me</a>
+
+        <a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+
+    </footer>
+    </div>
+<body>
+
+</html>

@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="author" content="Nora Mattson">
+    <meta name="keywords" content="lab, Carnegie Mellon, IS Milieux">
+    <meta name="description" content="A website about me, Nora Mattson.">
+
+    <link rel="stylesheet" media="all" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery-ui.css"/>
+    <link rel="stylesheet" media="all" type="text/css" href="css/jquery.lightbox.css"/>
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <script type="text/javascript" src="js/scripts.js"></script>
+    <script type="text/javascript" src="js/jquery-ui.js" ></script>
+    <script type="text/javascript" src="js/jquery.lightbox.min.js" ></script>
+
+    <script>
+        $(function(){
+            $( "#accordion" ).accordion();
+        });
+    </script>
+
+    <script>
+        $(function() {
+            $( "#tabs" ).tabs({
+                event: "mouseover"
+            });
+        });
+    </script>
+
+    <script type="text/javaScript">
+        $(function() {
+            $('#gallery a').lightBox();
+        });
+    </script>
+
+</head>
+
+<body>
+    <div id="container">
+    <div id="top_row">
+        <header>
+            <h1>Nora Mattson</h1>
+            <h2>CMU Information Systems Student</h2>
+        </header>
+
+        <nav>
+            <a href= "index.html">About</a>
+            <a href= "projects.html" class="selected">Projects</a>
+            <a href= "contact.html">Contact</a>
+        </nav>
+    </div>
+
+    <div id="content">
+        <h3>Projects</h3>
+
+        <div id="accordion">
+            <h4>Case Analysis Project</h4>
+            <div><p>
+                Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                posuere cubilia Curae; Phasellus luctus mauris vel nulla laoreet
+                dictum. Cras non ipsum vel est pretium auctor ut id lacus. Nam
+                ut malesuada ante. Vestibulum et rhoncus velit. Nulla facilisi.
+                Praesent sed elit euismod, pharetra neque eget, rhoncus orci.
+            </p></div>
+
+            <h4>Web Development Project</h4>
+            <div><p>
+                Aenean convallis eget ligula laoreet eleifend. Ut ut diam
+                imperdiet, fringilla erat a, viverra dui. Cras dapibus vulputate
+                blandit. Nam pharetra odio ex, ac sollicitudin felis efficitur
+                vel. Donec condimentum sed nunc nec dignissim. Nulla semper sed
+                metus nec efficitur.
+                </p></div>
+
+            <h4>Database Project</h4>
+            <div><p>
+                Proin dapibus lorem et magna mattis egestas. In libero libero,
+                ultrices vel lorem quis, porttitor hendrerit nibh. Vivamus
+                tempus bibendum diam in hendrerit. Praesent blandit arcu in nunc
+                mollis sodales. In a justo eu urna pretium commodo.
+                </p>
+                <ul>
+                    <li>List item one</li>
+                    <li>List item two</li>
+                    <li>List item three</li>
+                </ul>
+            </div>
+        </div>
+
+        <div id="tabs">
+            <ul>
+                <li><a href="#tabs-1">Case Analysis Project</a></li>
+                <li><a href="#tabs-2">Web Dev Project</a></li>
+                <li><a href="#tabs-3">Database Project</a></li>
+            </ul>
+
+            <div id="tabs-1">
+                <p>
+                    Vestibulum ante ipsum primis in faucibus orci luctus et ultrices
+                    posuere cubilia Curae; Phasellus luctus mauris vel nulla laoreet
+                    dictum. Cras non ipsum vel est pretium auctor ut id lacus. Nam
+                    ut malesuada ante. Vestibulum et rhoncus velit. Nulla facilisi.
+                    Praesent sed elit euismod, pharetra neque eget, rhoncus orci.
+                </p>
+            </div>
+
+            <div id="tabs-2">
+                <p>
+                    Aenean convallis eget ligula laoreet eleifend. Ut ut diam
+                    imperdiet, fringilla erat a, viverra dui. Cras dapibus vulputate
+                    blandit. Nam pharetra odio ex, ac sollicitudin felis efficitur
+                    vel. Donec condimentum sed nunc nec dignissim. Nulla semper sed
+                    metus nec efficitur.
+                    </p>
+            </div>
+
+            <div id="tabs-3">
+                <p>
+                    Proin dapibus lorem et magna mattis egestas. In libero libero,
+                    ultrices vel lorem quis, porttitor hendrerit nibh. Vivamus
+                    tempus bibendum diam in hendrerit. Praesent blandit arcu in nunc
+                    mollis sodales. In a justo eu urna pretium commodo.
+                    </p>
+            </div>
+        </div>
+        
+        <p>Click on the thumbnail to see full image and description</p>
+        <div id="gallery">
+            <div id="galleryThumbnail"><div id="thmbnlShadow">
+            <a href="images/image1.jpg" title="The case analysis of enterprise layer concepts at Cirque du Soleil.">
+            <img src="images/image1thumb.jpg" alt="image 1"/></a></div></div>
+
+            <div id="galleryThumbnail"><div id="thmbnlShadow">
+            <a href="images/image2.jpg" title="The web development project utilized several front-end web development techniques using HTML, CSS, and JavaScript.">
+            <img src="images/image2thumb.jpg" alt="image 2"></a></div></div>
+
+            <div id="galleryThumbnail"><div id="thmbnlShadow">
+            <a href="images/image3.jpg" title="The database project included a entity relationship diagram and several data creation and manipulation techniques in MySQL">
+            <img src="images/image3thumb.jpg" alt="image 3"></a></div></div>
+        </div>
+
+        <table border=4>
+            <tr>
+                <th colspan="3">Course Projects</th>
+            </tr>
+            <tr>
+                <th>Title</th>
+                <th>Course</th>
+                <th>Semester</th>
+            </tr>
+            <tr onmouseover="showDescription('In the case analysis project, we analyzed SmoothPay and described how we could improve their process.');" onmouseout="hideDescription()">
+                <td>Case Analysis Project</td>
+                <td>67-250</td>
+                <td>Spring 2018</td>
+            </tr>
+            <tr onmouseover="showDescription('In the web development project, we applied our web dev lab skills to a real world scenario.');" onmouseout="hideDescription()">
+                <td>Web Development Project</td>
+                <td>67-250</td>
+                <td>Spring 2018</td>
+            </tr>
+            <tr onmouseover="showDescription('In the database project, we learnewd how to model the database of a company in a relational form.');" onmouseout="hideDescription()">
+                <td>Database Project</td>
+                <td>67-250</td>
+                <td>Spring 2018</td>
+            </tr>
+        </table>
+        <div id="description"></div>
+    </div>
+
+    <div id="sidebar">
+        <h3>Find Me</h3>
+        Nora Mattson<br/>
+        <a href="http://www.cmu.edu" target="_blank">Carnegie Mellon University</a><br/>
+        5000 Forbes Avenue<br/>
+        Pittsburgh, PA 15213<br/>
+        347-835-7159(c)<br/>
+        <a href="mailto:nmattson@andrew.cmu.edu"><img src="images/email.png"></a>
+        <a href="https://www.linkedin.com/in/nora-m-9305b7125/"><img src="images/linkedIn.png"></a>
+        <a href="https://www.facebook.com/nora.mattson.908"><img src="images/facebook.png"></a>
+    </div>
+
+    <footer>
+        <hr/>
+        &copy; Nora Mattson 2017<br/>
+        <a href="mailto:nmattson@andrew.cmu.edu">Email Me</a>
+
+        <a href="http://cmu.edu" target="_blank">Carnegie Mellon University</a>
+
+    </footer>
+    </div>
+<body>
+
+</html>

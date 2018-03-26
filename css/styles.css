@@ -1,0 +1,171 @@
+body {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 100%;
+    line-height: 1.7em;
+    color: #000000;
+}
+
+#container {
+    width: 70%;
+    margin: 10px auto;
+    /* border: 1px solid gray; */
+}
+
+#top_row {
+    border-bottom: 1px dotted #cccccc;
+    padding: .5em .5em 3em .5em;
+    /*margin-bottom: -2.5em;*/
+}
+
+#top_row h1 {
+    color: #ffb400;
+    font-size: 4em;
+    letter-spacing: 2px;
+}
+
+#top_row h2 {
+    font-size: 1.125em;
+    font-weight: 500;
+}
+
+#top_row nav{
+    float: right;
+}
+
+#top_row nav a{
+    text-decoration: none;
+    font-size: 1.125em;
+    font-weight: 400;
+    padding: 15px;
+    color: #000000;
+}
+
+#top_row nav a.selected {
+    background: #f6f6f6;
+    color: #bbbbbb;
+}
+
+#top_row nav a.selected:hover {
+    background: #f6f6f6;
+    color: #33cc33;
+}
+
+#top_row nav a:hover {
+    background: #f6f6f6;
+    color: #33cc33;
+}
+
+#content {
+    float: left;
+    width: 70%;
+    margin: 0;
+    margin: 1em;
+    border-right: 1px dotted #ccc;
+}
+
+#content h3 {
+    font-family: Georgia, serif;
+    font-size: 1.5em;
+    margin: 30px 0 10px 0;
+    font-weight: normal;
+}
+
+#sidebar {
+    float:left;
+    padding: 1em;
+    font-size: .875em;
+    /*border-left: 1px solid gray;*/
+}
+
+#sidebar h3 {
+    font-size: 1.125em;
+    border-bottom: 1px dotted #ccc;
+}
+
+footer {
+    clear: both;
+    margin: 0;
+    padding: .5em;
+    color: #333333;
+    font-variant: small-caps;
+    font-size: .813em;
+    text-align: center;
+    /*background-color: #ddd*/
+}
+
+#content img {
+    float: left;
+    margin: 1em;
+}
+
+#bio {
+    margin-left: 3em;
+    font-size: .875em;
+}
+
+#bio a {
+    text-decoration: none;
+    border-bottom: 1px dotted #000;
+    color: #000;
+}
+
+#bio a:hover {
+    color: #33cc33;
+}
+
+#sidebar a {
+    color: #ffb400;
+    text-decoration: none;
+}
+
+#sidebar a:hover {
+    text-decoration: underline;
+}
+
+table {
+    width: 75%;
+    border: 3px solid #ff9933;
+    border-spacing: 3px;
+    margin: auto;
+    table-layout: auto;
+    border-collapse: collapse;
+}
+
+th{
+    height: 40px;
+    font-weight: 500;
+}
+
+th, td {
+    padding: 2px;
+    text-align: center;
+    border: 1px solid #333333;
+}
+
+form{
+    width:75%;
+    margin: auto;
+    border: 1px solid #ff9933;
+    padding: 10px;
+}
+
+legend{
+    font-weight: 500;
+    text-align: center;
+    color: #666666;
+    margin-bottom: 5px;
+}
+
+label{
+    font-weight: 500;
+    text-align: center;
+}
+
+html{
+    overflow-y: scroll;
+}
+
+iframe{
+    display: block;
+    margin: auto;
+}
